@@ -1,0 +1,28 @@
+.header {
+    @extend %container;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    font-weight: 700;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.header__logo--styles {
+    font-style: var(--secondary-font);
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-color);
+}
