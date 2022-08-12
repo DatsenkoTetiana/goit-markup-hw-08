@@ -1,57 +1,67 @@
-.clients{
-    @extend %section;
+.clients {
+  @extend %section;
 }
-.clients__container{
-    @extend %container;
+.clients__container {
+  @extend %container;
 }
 .clients__title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  animation: move 1500ms linear 100ms 1 both;
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    animation: move 1500ms linear 100ms 1 both;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
     display: flex;
     gap: 30px;
-}
+  }
+
 
 .clients__item {
-    border-radius: 4px;
-    animation: fade-in 1500ms ease 100ms 1 alternate both;
+  border-radius: 4px;
+  animation: fade-in 1500ms ease 100ms 1 alternate both;
 }
 
 .clients__logo {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 92px;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 170px;
+  }
 
-    transform: translatex(0);
-    transition-property: transform;
-    transition-duration: 2000ms;
-    transition: border-color var(--animation-hover), fill var(--animation-hover);
+  transform: translatex(0);
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transition: border-color var(--animation-hover), fill var(--animation-hover);
 
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     border-color: var(--accent-color);
+  }
 }
-}
-
 
 .clients__icon {
-    width: 106px;
-    height: 60px;
-    fill: #AFB1B8;
-    transition: fill var(--animation-hover);
-.clients__logo:hover &,
-.clients__logo:focus & {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition: fill var(--animation-hover);
+  .clients__logo:hover &,
+  .clients__logo:focus & {
     fill: var(--accent-color);
-}
+  }
 }

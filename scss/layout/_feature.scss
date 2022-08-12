@@ -6,12 +6,15 @@
     @extend %container;
 }
 .feature__list {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+    }
 }
-
+ @media screen and (min-width: 1200px){
 .feature__item:not(:last-child) {
     margin-right: 30px;
 }
+ }
 
 .feature__item.list-title {
     margin-bottom: 10px;
