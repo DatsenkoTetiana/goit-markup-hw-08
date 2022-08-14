@@ -3,7 +3,6 @@ body {
     color: var(--main-txt-color);
     margin: 0;
 }
-
 .no-scroll {
     overflow: hidden;
 }
@@ -15,5 +14,5 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    outline: 5px solid red;
+    // outline: 5px solid red;
 }

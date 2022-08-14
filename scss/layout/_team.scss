@@ -20,14 +20,18 @@
 }
 
 .team__list {
+  margin: 0 auto;
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 30px;
+    justify-content: center;
+    
   }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
         gap: 30px;
+      
 }
 }
 .team__item {
