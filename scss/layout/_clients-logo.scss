@@ -19,12 +19,24 @@
 }
 
 .clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
   }
-
+  @media screen and (min-width: 450px) and (max-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
 .clients__item {
+  @media screen and (min-width: 450px) and (max-width: 1200px) {
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
   border-radius: 4px;
   animation: fade-in 1500ms ease 100ms 1 alternate both;
 }

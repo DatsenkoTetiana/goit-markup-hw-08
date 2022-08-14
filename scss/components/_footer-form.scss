@@ -1,50 +1,75 @@
-.footer-form__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-color);
-    margin-bottom: 20px;
+.footer-form__group{
+  @media screen and (min-width: 768px) and (max-width:1200px){
+ max-width: 450px;
+   text-align: center;
+     margin: 0 auto; 
+  }
+    @media screen and (min-width: 1200px){
+      margin: 0;
+    }
+            @media screen and (min-width: 450px) and (max-width: 768px) {
+              text-align: center;
+            }
+
 }
+.footer-form__title {  
+ font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
 .footer-form {
-    display: flex;
+  @media screen and (min-width: 1200px){
+      display: flex; 
+
+  }
 }
 
 .footer-form__email {
-    margin-right: 12px;
-    min-width: 358px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px){
+      margin: 0 12px 0 0;
+  }
+min-width: 450px;
     min-height: 50px;
-    padding: 15px 16px;
-    border: none;
+  padding: 15px 16px;
+  border: none;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: transparent;
-    outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+  }
 }
 .footer-form__btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    display: inline-flex;
-    align-items: center;
-    letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.06em;
 
-    color: var(--white-color);
-    min-width: 200px;
-    min-height: 50px;
-    padding: 10px 28px;
-    background-color: var(--accent-color);
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  color: var(--white-color);
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 28px;
+  background-color: var(--accent-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .footer-form__btn-icon {
-    margin-left: 10px;
-    width: 24px;
-    height: 24px;
-    fill: var(--white-color);
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
 }

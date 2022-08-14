@@ -1,12 +1,17 @@
 .nav {
-  margin-left: 93px;
+  @media screen and (min-width: 738px){
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px){
+      margin-left: 93px;
+
+  }
 }
 
 .nav__list {
   display: none;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 738px){
       display: flex;
-
   }
 }
 
@@ -46,11 +51,9 @@
 &:hover:after {
   opacity: 1;
 }
+@media screen and (min-width: 738px){
+  font-size: 14px;
 }
-@media screen and (min-width: 1200px) {
-  .nav__link {
-    font-size: 14px;
-  }
 }
 .nav__link--current {
   color: var(--accent-color);
