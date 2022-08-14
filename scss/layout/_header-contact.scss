@@ -6,6 +6,7 @@
     @media screen and (min-width: 738px) and (max-width: 1200px) {
 max-width: 138px; 
 display: block;
+margin-left: auto;
   }
   @media screen and (min-width: 1200px){
           display: flex;
@@ -23,13 +24,15 @@ display: block;
     transition: color var(--animation-hover);
    @media screen and (min-width: 1200px){
     padding: 32px 0;
-
  }
-  
+  }
+}
+.contacts__item--tablet{
+  @media screen and (min-width:738px) and (max-width: 1200px) {
+     margin-bottom: 10px;
   }
  
 }
-
 .contacts__link {
   @media screen and (min-width: 768px) {
     font-size: 12px;
@@ -37,6 +40,7 @@ display: block;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
+
 }
 
 .contacts__item:not(:last-child) {

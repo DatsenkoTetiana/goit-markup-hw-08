@@ -712,6 +712,7 @@ ul {
   .contacts__list {
     max-width: 138px;
     display: block;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -741,6 +742,12 @@ ul {
 @media screen and (min-width: 1200px) {
   .contacts__list .contacts__link {
     padding: 32px 0;
+  }
+}
+
+@media screen and (min-width: 738px) and (max-width: 1200px) {
+  .contacts__item--tablet {
+    margin-bottom: 10px;
   }
 }
 
@@ -1126,10 +1133,16 @@ ul {
   -webkit-animation: fade-in 1500ms ease 100ms 1 alternate both;
           animation: fade-in 1500ms ease 100ms 1 alternate both;
 }
-@media screen and (min-width: 450px) and (max-width: 1200px) {
+@media screen and (min-width: 450px) and (max-width: 768px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 1200px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
