@@ -30,20 +30,20 @@
       </nav>
       <ul class="contacts__list">
         <li class="contacts__item contacts__item--tablet">
-          <a class="contacts__link" href="mailto:info@devstudio.com">
-            <svg class="contacts__icon-envelope">
+          <a class="contacts__link" href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer">
+            <svg class="contacts__icon-envelope" width="16" height="12">
               <use href="./images/icons.svg#envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
         <li class="contacts__item">
-          <a class="contacts__link" href="tel:+380961111111">
+          <a class="contacts__link" href="tel:+380961111111" target="_blank" rel="noopener noreferrer">
             <svg class="contacts__icon-smartphone">
               <use href="./images/icons.svg#smartphone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
-      <button class="button__mobile is-open" type="button">
+      <button class="button__mobile" type="button" aria-expanded="false" data-menu-close>
         <svg class="button-mobile__icon" width="40" height="40" aria-label="перемикач мщбільного меню">
           <use class="icon__menu-mobile" href="./images/icons.svg#menu-mobile"></use>
           <use class="icon__menu-close" href="./images/icons.svg#icon-close"></use>
@@ -425,8 +425,52 @@
       </form>
     </div>
   </div>
+  <div class="mobile-overlay__menu">
+    <div class="mobile-overlay__container">
+      <nav class="mobile-overlay__nav">
+        <ul class="nav-overlay__list">
+          <li class="nav-overlay__item">
+            <a class="nav-overlay__link nav-overlay__link--current" href="#">Студія</a>
+          </li>
+          <li class="nav-overlay__item">
+            <a class="nav-overlay__link" href="portfolio.html"> Портфоліо</a>
+          </li>
+          <li class="nav-overlay__item">
+            <a class="nav-overlay__link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="overlay__bottom">
+        <ul class="contacts-overlay__list">
+          <li class="contacts-overlay__item">
+            <a class="contacts-overlay__tel" href="tel:+380961111111" target="_blank" rel="noopener noreferrer">+38 096
+              111 11 11</a>
+          </li>
+          <li class="contacts-overlay__item">
+            <a class="contacts-overlay__mail" href="mailto:info@devstudio.com" target="_blank"
+              rel="noopener noreferrer">info@devstudio.com</a>
+          </li>
+
+        </ul>
+        <ul class="reference-overlay__list">
+          <li class="reference-overlay__item">
+            <a href="" class="reference-overlay__link" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+          <li class="reference-overlay__item">
+            <a href="" class="reference-overlay__link" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </li>
+          <li class="reference-overlay__item">
+            <a href="" class="reference-overlay__link" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li class="reference-overlay__item">
+            <a href="" class="reference-overlay__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
   <script src="./js/modal.js"></script>
-  <!-- <script src="./js/mobile-menu.js"></script> -->
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

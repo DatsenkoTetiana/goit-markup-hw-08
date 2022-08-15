@@ -1,4 +1,5 @@
 .nav {
+
   @media screen and (min-width: 738px){
     margin-left: 88px;
   }
@@ -6,7 +7,10 @@
       margin-left: 93px;
 
   }
+ @media screen and (min-width: 738px) {
+display: flex; }
 }
+
 
 .nav__list {
   display: none;
