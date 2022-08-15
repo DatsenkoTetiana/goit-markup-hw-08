@@ -210,6 +210,7 @@ ul {
 }
 
 .mobile-overlay__menu {
+  display: none;
   margin: 0;
   position: fixed;
   top: 0;
@@ -303,12 +304,9 @@ ul {
   color: var(--accent-color);
 }
 
-.reference-overlay__list:not(:last-child) .reference-overlay__link::after {
-  content: " ";
-  display: block;
-  width: 1px;
-  margin-left: 10px;
-  background-color: rgba(33, 33, 33, 0.2);
+.reference-overlay__item:not(:last-child) .reference-overlay__link {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .button__mobile {
