@@ -109,7 +109,7 @@
             transform: translatey(0) scale(1);
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .portfolio, .clients, .team, .cart, .feature, .hero {
     padding: 60px 0;
   }
@@ -128,6 +128,11 @@
 .portfolio__container, .footer__container, .clients__container, .team__container, .cart__container, .feature__container, .hero__container, .header__container, .header {
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 320px) {
+  .portfolio__container, .footer__container, .clients__container, .team__container, .cart__container, .feature__container, .hero__container, .header__container, .header {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 480px) {
   .portfolio__container, .footer__container, .clients__container, .team__container, .cart__container, .feature__container, .hero__container, .header__container, .header {
@@ -210,14 +215,21 @@ ul {
 }
 
 .mobile-overlay__menu {
-  display: none;
   margin: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
   background-color: var(--white-color);
+}
+.mobile-overlay__menu.is-open {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
 }
 @media screen and (min-width: 767px) {
   .mobile-overlay__menu {
@@ -237,6 +249,17 @@ ul {
   background-color: var(--white-color);
   padding: 48px 40px;
   height: 100%;
+}
+.mobile-overlay__btn {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .nav-overlay__item:not(:last-child) {
@@ -341,8 +364,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer-form__group {
     max-width: 450px;
-    text-align: center;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -350,9 +372,13 @@ ul {
     margin: 0;
   }
 }
-@media screen and (min-width: 450px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 1200px) {
   .footer-form__group {
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
   }
 }
 
@@ -375,8 +401,8 @@ ul {
 }
 
 .footer-form__email {
-  margin-bottom: 20px;
-  min-width: 450px;
+  min-width: 290px;
+  margin: 0 auto;
   min-height: 50px;
   padding: 15px 16px;
   border: none;
@@ -397,8 +423,14 @@ ul {
     min-width: 358px;
   }
 }
+@media screen and (min-width: 480px) {
+  .footer-form__email {
+    min-width: 450px;
+  }
+}
 
 .footer-form__btn {
+  margin-top: 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -408,6 +440,9 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
   min-width: 200px;
@@ -418,6 +453,11 @@ ul {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__btn {
+    margin-top: 0;
+  }
 }
 
 .footer-form__btn-icon {
@@ -463,7 +503,7 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
+  width: 320px;
   min-height: 609px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -474,6 +514,11 @@ ul {
   transition: opacity var(--animation-hover), -webkit-transform var(--animation-hover);
   transition: transform var(--animation-hover), opacity var(--animation-hover);
   transition: transform var(--animation-hover), opacity var(--animation-hover), -webkit-transform var(--animation-hover);
+}
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 769px) {
   .modal {
@@ -974,7 +1019,8 @@ ul {
 }
 
 .feature {
-  padding-bottom: 0;
+  margin: 0 auto;
+  padding-bottom: 60px 0;
 }
 
 .feature__list {
@@ -1002,9 +1048,6 @@ ul {
   }
 }
 
-.feature__item {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .feature__item {
     margin-bottom: 0;
@@ -1018,11 +1061,7 @@ ul {
 }
 
 .feature__item:not(:last-child) {
-  margin-bottom: 0;
-}
-
-.feature__title {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .feature-block {
@@ -1048,11 +1087,17 @@ ul {
 }
 
 .feature__title {
+  margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .feature__title {
+    text-align: center;
+  }
 }
 
 .feature__text {
@@ -1145,6 +1190,10 @@ ul {
 
 .team__list {
   margin: 0 auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .team__list {
@@ -1169,6 +1218,7 @@ ul {
 }
 
 .team__item {
+  margin-bottom: 30px;
   background-color: var(--white-color);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -1185,6 +1235,7 @@ ul {
 }
 
 .team__img {
+  margin: 0 auto;
   display: block;
 }
 
@@ -1273,6 +1324,12 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .clients__list {
@@ -1380,6 +1437,10 @@ ul {
 }
 
 .footer__group {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
@@ -1476,6 +1537,10 @@ ul {
 }
 
 .footer__socials-title {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;

@@ -19,9 +19,13 @@
 }
 
 .clients__list {
-  display: flex;
+display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  align-items: center;
+  justify-content: center;
+  
+  
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;

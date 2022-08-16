@@ -1,5 +1,5 @@
 %section {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
 padding: 60px 0;
   }
   @media screen and (min-width: 768px) {
@@ -11,9 +11,13 @@ padding: 94px 0;  }
 
 %container {
   //   width: 1200px;
-  margin: 0 auto;
+ margin: 0 auto;
   padding: 0 15px;
+
   //breakpoint mobile
+  @media screen and (min-width: 320px) {
+      width: 320px; 
+    }
   @media screen and (min-width: 480px) {
     width: 480px;
   }
