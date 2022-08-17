@@ -1,22 +1,21 @@
 .portfolio__group {
-  display: flex;
+margin: 0 auto;
+    @media screen and (min-width: 768px){
+          gap: 30px;  display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-  //  @media screen and (min-width: 738px){
-  //   display: flex;
-  //       flex-wrap: wrap;
-  //       gap: 30px;
-  //  }
+   
+    }
 }
 
 .portfolio__bg {
-  @media screen and (min-width: 450px) and (max-width: 767px) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 768px){
+        margin-bottom: 30px;
+
   }
    @media screen and (min-width: 768px) and (max-width: 1200px){
         flex-basis: calc((100% - 30px * 2) / 2);
    }
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 769px){
               flex-basis: calc((100% - 30px * 2) / 3);
 
         }
@@ -30,15 +29,7 @@
   
 }
 .overlay {
-  width: 450px;
- 
-        @media screen and (min-width: 481px) {
-          width: 354px;
-  
-        }
-        @media screen and (min-width: 1200px){
-    width: 370px;
-  }
+max-width: 450px;
   position: relative;
   overflow: hidden;
   transition: transform var(--animation-hover), opacity var(--animation-hover);
@@ -46,6 +37,11 @@
 
 .overlay__img {
   display: block;
+    height: auto;
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
 }
 
 .overlay__text {

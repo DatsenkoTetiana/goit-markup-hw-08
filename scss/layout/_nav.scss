@@ -1,20 +1,17 @@
 .nav {
-
-  @media screen and (min-width: 738px){
-    margin-left: 88px;
-  }
+     margin-left: 88px;
   @media screen and (min-width: 1200px){
       margin-left: 93px;
 
   }
- @media screen and (min-width: 738px) {
+ @media screen and (min-width: 768px) {
 display: flex; }
 }
 
 
 .nav__list {
   display: none;
-  @media screen and (min-width: 738px){
+  @media screen and (min-width: 768px){
       display: flex;
   }
 }

@@ -23,16 +23,16 @@ width: 100%;
 .mobile-overlay__container{
   display: flex;
   flex-direction: column;
-  max-width: 480px;
   background-color: var(--white-color);
   height: 100%;
-  padding: 48px 15px;
+  width: 100%;
+  padding: 48px 40px;
   .mobile-overlay__menu.is-open & {
 transform: translateX(100%); 
-transition: transform var(--animation-hover);
 }
 .mobile-overlay__menu.is-open & {
-  transform: translateX(0);
+  transform: translateX(0);transition: transform var(--animation-hover);
+
 }
     @media screen and (min-width: 449px){
   padding: 48px 40px;
@@ -49,6 +49,11 @@ transition: transform var(--animation-hover);
   height: 40px;
   cursor: pointer;
   margin-left: auto;
+  transform: color var(--animation-hover);
+  &:hover,
+  &:focus{
+    color: var(--accent-color);
+  }
 }
 .mobile-overla__icon{
   width: 40px;
@@ -127,10 +132,9 @@ border-right: 1px solid rgba(33, 33, 33, 0.2);
   width: 40px;
   height: 40px;
   padding: 0;
-  margin-left: auto;
   cursor: pointer;
 
-        @media screen and (min-width: 738px) {
+        @media screen and (min-width: 768px) {
           display: none;
         }
 }

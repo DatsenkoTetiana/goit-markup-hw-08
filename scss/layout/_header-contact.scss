@@ -1,15 +1,13 @@
 .contacts__list {
-  @media screen and (min-width: 320px) and (max-width: 1200px) {
+  margin-left: auto;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     display: none; 
-
-  }
-    @media screen and (min-width: 738px) and (max-width: 1200px) {
-display: block;
-margin-left: 90px;
   }
   @media screen and (min-width: 1200px){
-          display: flex;
-    margin-left: auto;
+          display: flex;     
+           margin-left: auto;
+  gap: 30px;
+
     }
   & .contacts__link {
     align-items: center;  
@@ -26,7 +24,12 @@ margin-left: 90px;
  }
   }
 }
-
+.contacts__item:not(:first-child){
+  margin-top: 10px;
+  @media screen and (min-width: 1200px){
+    margin: 0;
+  }
+}
 .contacts__link {
   @media screen and (min-width: 768px) {
     font-size: 12px;
@@ -34,12 +37,6 @@ margin-left: 90px;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
-
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-      margin-bottom: 10px;
 }
 
 .contacts__link:hover,

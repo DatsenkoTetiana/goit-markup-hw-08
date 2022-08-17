@@ -1,22 +1,21 @@
 .header {
     @extend %container;
     border-bottom: 1px solid var(--border-color);
-@media screen and (min-width: 738px) and (max-width: 1200px){
-    margin: 0;
-    padding: 0;
 }
-}
-
-.header__container {
-    @extend %container;
+.header__container {  
+    margin: 0 auto;
+    padding: 0 15px;
     display: flex;
     align-items: center;
-    @media screen and (min-width: 320px) and (max-width: 767px){
+    justify-content: center;
+    margin-right: 0;
+    @media screen and (min-width: 320px) and (max-width:737px){
         padding: 10px 0;
     }
 }
 
 .header__logo {
+    margin-right: auto;
     font-weight: 700;
     text-decoration: none;
     font-family: var(--secondary-font);
@@ -24,7 +23,9 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-
+@media screen and (min-width: 738px){
+margin: 0;
+}
     @media screen and (min-width: 1200px) {
             font-size: 26px;
         }

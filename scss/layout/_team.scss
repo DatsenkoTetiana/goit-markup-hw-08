@@ -49,8 +49,11 @@
 }
 
 .team__img {
-  margin: 0 auto;
+  height: auto;
   display: block;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .team__wrapper {

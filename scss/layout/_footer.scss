@@ -1,6 +1,5 @@
 .footer {
-  padding: 60px 0;
-  background-color: var(--darkblue-background-color);
+@extend %section;  background-color: var(--darkblue-background-color);
 }
 
 .footer__container {
