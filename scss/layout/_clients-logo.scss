@@ -20,30 +20,20 @@
 
 .clients__list {
 display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   align-items: center;
   justify-content: center;
-  
-  
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    gap: 30px;
-  }
-  @media screen and (min-width: 450px) and (max-width: 1200px) {
-    display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-  }
+     @media screen and (min-width: 1200px){
+flex-wrap: nowrap;
+     }
 }
 
 .clients__item {
   border-radius: 4px;
   animation: fade-in 1500ms ease 100ms 1 alternate both;
-  @media screen and (min-width: 450px) and (max-width: 768px) {
     flex-basis: calc((100% - 30px * 2) / 2);
-  }
-  @media screen and (min-width: 450px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     flex-basis: calc((100% - 30px * 2) / 3);
   }
 }

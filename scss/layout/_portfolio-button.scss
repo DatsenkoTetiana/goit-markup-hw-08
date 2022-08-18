@@ -5,22 +5,21 @@
   @extend %container;
 }
 .portfolio-btn__list {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-  gap: 8px;flex-wrap: wrap;
-  @media screen and (max-width: 638px){
+  gap: 8px;
+  flex-wrap: wrap;
+  @media screen and (max-width: 638px) {
     max-width: 330px;
     justify-content: flex-start;
     row-gap: 15px;
+    margin-bottom: 30px;
   }
-     @media screen and (min-width: 638px){
-  margin-bottom: 30px;
-     }
-            @media screen and (min-width: 1200px){
-  margin-bottom: 50px;
-            }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-btn {

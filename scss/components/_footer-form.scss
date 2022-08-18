@@ -1,21 +1,18 @@
-.footer-form__group{
-  @media screen and (min-width: 768px) and (max-width:1200px){
- max-width: 450px;
-  
-     margin: 0; 
-  }
-    @media screen and (min-width: 1200px){
-      margin: 0;
-    }
-            @media screen and (min-width: 320px) and (max-width: 1200px) {
-              text-align: center;
-              justify-content: center;
-              margin: 0 auto;
-            }
+.footer-form__group {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    max-width: 450px;
 
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
 }
-.footer-form__title {  
- font-weight: 700;
+.footer-form__title {
+  font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -25,37 +22,32 @@
 }
 
 .footer-form {
-  @media screen and (min-width: 1200px){
-      display: flex; 
-
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
 .footer-form__email {
-width: 100%;
-margin: 0 auto;
-    min-height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 50px;
   padding: 15px 16px;
   border: none;
-
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  @media screen and (min-width: 1200px){
-      margin: 0 12px 0 0;
+  @media screen and (min-width: 1200px) {
+    margin: 0 12px 0 0;
   }
   @media screen and (min-width: 1200px) {
     min-width: 358px;
-  } 
-//    @media screen and (min-width: 480px){
-// min-width: 450px;
-//   }
+  }
 }
 .footer-form__btn {
-margin-top: 20px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -72,7 +64,7 @@ margin-top: 20px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-top: 0;
   }
 }
