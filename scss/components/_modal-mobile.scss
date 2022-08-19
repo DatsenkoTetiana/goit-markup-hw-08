@@ -16,7 +16,7 @@
     pointer-events: initial;
     visibility: visible;
   }
-  @media screen and (min-width: 738px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }
@@ -34,7 +34,7 @@
     transform: translateX(0);
     transition: transform var(--animation-hover);
   }
-  @media screen and (min-width: 449px) {
+  @media screen and (min-width: 479px) {
     padding: 48px 40px;
   }
 }
@@ -130,7 +130,7 @@
   padding: 0;
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     display: none;
   }
 }

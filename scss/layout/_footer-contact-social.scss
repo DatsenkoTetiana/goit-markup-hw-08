@@ -21,17 +21,19 @@
 }
 
 .footer__socials-group {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    margin-left: auto;
-    padding-top: 5px;
+  @media screen and (max-width: 767px){
+margin: 60px 0;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
-    padding-top: 12px;
+    text-align: left;
   }
 }
 
 .footer__socials-title {
+  @media screen and (min-width: 1200px){
+    text-align: left;
+  }
   text-align: center;
     justify-content: center;
   font-weight: 700;
